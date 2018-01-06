@@ -1,18 +1,18 @@
 //
-//  ChallengeTableViewController.m
+//  MineInfoTableViewController.m
 //  RunPlan
 //
 //  Created by JFChen on 2017/12/23.
 //  Copyright © 2017年 JFChen. All rights reserved.
 //
 
-#import "ChallengeTableViewController.h"
+#import "MineInfoTableViewController.h"
 
-@interface ChallengeTableViewController ()
+@interface MineInfoTableViewController ()
 
 @end
 
-@implementation ChallengeTableViewController
+@implementation MineInfoTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,8 +22,6 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)didReceiveMemoryWarning {
