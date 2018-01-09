@@ -7,6 +7,7 @@
 //
 
 #import "ChallengeTableViewController.h"
+#import "ChallengeTableViewCell.h"
 
 @interface ChallengeTableViewController ()
 
@@ -25,6 +26,8 @@
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.title = @"打卡";
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"ChallengeTableViewCell" bundle:nil] forCellReuseIdentifier:@"ChallengeTableViewCell"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,24 +38,53 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 3;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChallengeTableViewCell" forIndexPath:indexPath];
     // Configure the cell...
+    UILabel *labelTitle = [cell viewWithTag:101];
+    UILabel *labelPlane = [cell viewWithTag:102];
+    UIImageView *bgImage = [cell viewWithTag:103];
+    UILabel *labelMoney = [cell viewWithTag:104];
+    UILabel *labelTarget = [cell viewWithTag:105];
+    
+    switch (indexPath.row) {
+        case 0:
+        {
+        }
+            break;
+        case 1:
+        {
+            labelTitle.text = @"帮派挑战计划";
+            labelPlane.text = @"即将开放";
+            labelTarget.text = @"完成帮派目标每日分钱";
+            labelMoney.text = @"0";
+            bgImage.image = [UIImage imageNamed:@"challenge_bangpai"];
+        }
+            break;
+        case 2:
+        {
+            labelTitle.text = @"搭档挑战计划";
+            labelPlane.text = @"即将开放";
+            labelTarget.text = @"完成搭档目标每日分钱";
+            labelMoney.text = @"0";
+            bgImage.image = [UIImage imageNamed:@"challenge_dadang"];
+        }
+            break;
+            
+        default:
+            break;
+    }
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
