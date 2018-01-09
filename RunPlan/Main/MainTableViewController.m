@@ -8,13 +8,12 @@
 
 #import "MainTableViewController.h"
 #import "MyProgressView.h"
+#import "MainTableViewCell.h"
+#import "MainTableViewCellSpeci.h"
 
 @interface MainTableViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btnJoinChallenge;
 @property (weak, nonatomic) IBOutlet MyProgressView *progressBGView;
-@property (weak, nonatomic) IBOutlet UIImageView *progressBGImage;
-
-- (IBAction)rightBtn:(id)sender;
 @end
 
 @implementation MainTableViewController
@@ -31,6 +30,8 @@
     _btnJoinChallenge.layer.cornerRadius = 20.0;
     _btnJoinChallenge.layer.masksToBounds = YES;
     
+    [self.tableView registerNib:[UINib nibWithNibName:@"MainTableViewCell" bundle:nil] forCellReuseIdentifier:@"MainTableViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MainTableViewCellSpeci" bundle:nil] forCellReuseIdentifier:@"MainTableViewCellSpeci"];
     self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
@@ -52,24 +53,27 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 6;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainTableViewCell" forIndexPath:indexPath];
+    UILabel *shunxu = [cell viewWithTag:101];
+    UIImageView *icon = [cell viewWithTag:102];
+    UILabel *name = [cell viewWithTag:103];
+    UILabel *bushu = [cell viewWithTag:104];
+    UILabel *zanNum = [cell viewWithTag:106];
+    
     
     // Configure the cell...
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -114,8 +118,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)rightBtn:(id)sender {
-    NSLog(@"____ btn pressed");
-}
 @end

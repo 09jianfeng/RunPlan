@@ -20,27 +20,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JLE-GV-9R4">
-                        <rect key="frame" x="42" y="7" width="50" height="50"/>
+                    <imageView userInteractionEnabled="NO" tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shan" translatesAutoresizingMaskIntoConstraints="NO" id="JLE-GV-9R4">
+                        <rect key="frame" x="60" y="7" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="JLE-GV-9R4" secondAttribute="height" multiplier="1:1" id="Dzh-7k-SVv"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frank wang" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cz2-KX-iKh">
-                        <rect key="frame" x="102" y="16" width="92.5" height="32.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frank wang" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cz2-KX-iKh">
+                        <rect key="frame" x="120" y="16" width="85.5" height="32.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPo-Cp-n3x">
-                        <rect key="frame" x="272.5" y="17" width="31.5" height="31.5"/>
+                    <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPo-Cp-n3x">
+                        <rect key="frame" x="283.5" y="28" width="20.5" height="20.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="ZPo-Cp-n3x" secondAttribute="height" multiplier="1:1" id="LOq-tq-hah"/>
                         </constraints>
-                        <state key="normal" title="Z"/>
+                        <state key="normal" backgroundImage="zan_icon_selected"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17634" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKS-X4-bjf">
-                        <rect key="frame" x="204.5" y="16" width="60" height="32.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17634" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKS-X4-bjf">
+                        <rect key="frame" x="215.5" y="16" width="60" height="32.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="FwY-Mi-uTE"/>
                         </constraints>
@@ -48,9 +48,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezo-UY-Of2">
-                        <rect key="frame" x="8" y="16" width="29" height="32.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezo-UY-Of2">
+                        <rect key="frame" x="8" y="16" width="47" height="32.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="106" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1247" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgA-3L-3m2">
+                        <rect key="frame" x="274" y="16" width="38.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Y3y-sl-Lkg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -61,11 +70,15 @@
                     <constraint firstAttribute="bottom" secondItem="JLE-GV-9R4" secondAttribute="bottom" constant="7" id="AUc-EK-qB7"/>
                     <constraint firstItem="JLE-GV-9R4" firstAttribute="leading" secondItem="ezo-UY-Of2" secondAttribute="trailing" constant="5" id="EaA-41-4VK"/>
                     <constraint firstItem="QKS-X4-bjf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="G5A-yd-Gbc"/>
-                    <constraint firstItem="ZPo-Cp-n3x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="LFI-5E-biE"/>
+                    <constraint firstItem="QgA-3L-3m2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="KtE-9b-d5n"/>
+                    <constraint firstItem="ZPo-Cp-n3x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="LFI-5E-biE"/>
+                    <constraint firstAttribute="trailing" secondItem="QgA-3L-3m2" secondAttribute="trailing" constant="7.5" id="MV6-eW-ehQ"/>
+                    <constraint firstAttribute="bottom" secondItem="QgA-3L-3m2" secondAttribute="bottom" constant="33.5" id="OZJ-x4-eZ6"/>
                     <constraint firstItem="ezo-UY-Of2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="P0M-ZF-QCq"/>
+                    <constraint firstItem="QgA-3L-3m2" firstAttribute="leading" secondItem="cz2-KX-iKh" secondAttribute="trailing" constant="68.5" id="PCB-es-Peb"/>
                     <constraint firstAttribute="bottomMargin" secondItem="ZPo-Cp-n3x" secondAttribute="bottom" constant="8" id="PEI-O6-I7r"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ZPo-Cp-n3x" secondAttribute="trailing" constant="8" id="VQi-v0-cCz"/>
-                    <constraint firstItem="JLE-GV-9R4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="42" id="W2s-Pa-qe8"/>
+                    <constraint firstItem="JLE-GV-9R4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="W2s-Pa-qe8"/>
                     <constraint firstAttribute="bottomMargin" secondItem="cz2-KX-iKh" secondAttribute="bottom" constant="8" id="blO-qc-xM9"/>
                     <constraint firstAttribute="bottomMargin" secondItem="QKS-X4-bjf" secondAttribute="bottom" constant="8" id="hYd-kY-Shd"/>
                     <constraint firstItem="QKS-X4-bjf" firstAttribute="leading" secondItem="cz2-KX-iKh" secondAttribute="trailing" constant="10" id="iFc-sg-J74"/>
@@ -78,4 +91,8 @@
             <point key="canvasLocation" x="40" y="64.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="shan" width="591" height="592"/>
+        <image name="zan_icon_selected" width="22" height="22"/>
+    </resources>
 </document>

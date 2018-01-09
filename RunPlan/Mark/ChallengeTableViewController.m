@@ -24,6 +24,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.title = @"打卡";
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,6 +10,7 @@
 		4C79B927191C1F2E9F9E7B2F /* libPods-RunPlan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAFF9F3A481F2C6434B748A /* libPods-RunPlan.a */; };
 		78930E0B2004C160000C5A4F /* MyProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E0A2004C160000C5A4F /* MyProgressView.m */; };
 		78930E0E2004D9CD000C5A4F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E0D2004D9CD000C5A4F /* TabBarViewController.m */; };
+		78930E122004E206000C5A4F /* MainUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E112004E206000C5A4F /* MainUserInfo.m */; };
 		78AA10321FEE38380039372A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA10311FEE38380039372A /* AppDelegate.m */; };
 		78AA10381FEE38380039372A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AA10361FEE38380039372A /* Main.storyboard */; };
 		78AA103A1FEE38380039372A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AA10391FEE38380039372A /* Assets.xcassets */; };
@@ -37,6 +38,8 @@
 		78930E0A2004C160000C5A4F /* MyProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProgressView.m; sourceTree = "<group>"; };
 		78930E0C2004D9CD000C5A4F /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		78930E0D2004D9CD000C5A4F /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		78930E102004E206000C5A4F /* MainUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainUserInfo.h; sourceTree = "<group>"; };
+		78930E112004E206000C5A4F /* MainUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainUserInfo.m; sourceTree = "<group>"; };
 		78AA102D1FEE38380039372A /* RunPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AA10301FEE38380039372A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78AA10311FEE38380039372A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +96,15 @@
 			path = VIew;
 			sourceTree = "<group>";
 		};
+		78930E0F2004E1DB000C5A4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78930E102004E206000C5A4F /* MainUserInfo.h */,
+				78930E112004E206000C5A4F /* MainUserInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		78AA10241FEE38380039372A = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		78AA10461FEE391E0039372A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				78930E0F2004E1DB000C5A4F /* Model */,
 				78930E082004C13F000C5A4F /* VIew */,
 				78AA104F1FEE3B020039372A /* MainTableViewController.h */,
 				78AA10501FEE3B020039372A /* MainTableViewController.m */,
@@ -338,6 +351,7 @@
 				78AA10401FEE38380039372A /* main.m in Sources */,
 				78930E0B2004C160000C5A4F /* MyProgressView.m in Sources */,
 				78AA10831FEE9CD00039372A /* MineInfoTableViewController.m in Sources */,
+				78930E122004E206000C5A4F /* MainUserInfo.m in Sources */,
 				78AA10321FEE38380039372A /* AppDelegate.m in Sources */,
 				78AA105D1FEE3FA70039372A /* MainTableViewCellSpeci.m in Sources */,
 			);
