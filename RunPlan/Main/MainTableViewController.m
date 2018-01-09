@@ -45,6 +45,10 @@
 
 }
 
+- (IBAction)btnRulePressed:(id)sender {
+    
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
