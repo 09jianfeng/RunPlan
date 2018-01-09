@@ -7,9 +7,14 @@
 //
 
 #import "MainTableViewController.h"
+#import "MyProgressView.h"
 
 @interface MainTableViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btnJoinChallenge;
+@property (weak, nonatomic) IBOutlet MyProgressView *progressBGView;
+@property (weak, nonatomic) IBOutlet UIImageView *progressBGImage;
 
+- (IBAction)rightBtn:(id)sender;
 @end
 
 @implementation MainTableViewController
@@ -22,11 +27,22 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    _btnJoinChallenge.layer.cornerRadius = 20.0;
+    _btnJoinChallenge.layer.masksToBounds = YES;
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - touchEvent
+
+- (IBAction)btnJoinChallengePressed:(id)sender {
+
 }
 
 #pragma mark - Table view data source
@@ -95,4 +111,7 @@
 }
 */
 
+- (IBAction)rightBtn:(id)sender {
+    NSLog(@"____ btn pressed");
+}
 @end

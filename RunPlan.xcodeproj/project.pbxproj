@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C79B927191C1F2E9F9E7B2F /* libPods-RunPlan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAFF9F3A481F2C6434B748A /* libPods-RunPlan.a */; };
+		78930E0B2004C160000C5A4F /* MyProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E0A2004C160000C5A4F /* MyProgressView.m */; };
+		78930E0E2004D9CD000C5A4F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E0D2004D9CD000C5A4F /* TabBarViewController.m */; };
 		78AA10321FEE38380039372A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA10311FEE38380039372A /* AppDelegate.m */; };
-		78AA10351FEE38380039372A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA10341FEE38380039372A /* ViewController.m */; };
 		78AA10381FEE38380039372A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AA10361FEE38380039372A /* Main.storyboard */; };
 		78AA103A1FEE38380039372A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AA10391FEE38380039372A /* Assets.xcassets */; };
 		78AA103D1FEE38380039372A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AA103B1FEE38380039372A /* LaunchScreen.storyboard */; };
@@ -30,11 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7BC24AFBC10EC58E3FA8CC /* Pods-RunPlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunPlan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunPlan/Pods-RunPlan.debug.xcconfig"; sourceTree = "<group>"; };
+		78930E092004C160000C5A4F /* MyProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProgressView.h; sourceTree = "<group>"; };
+		78930E0A2004C160000C5A4F /* MyProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProgressView.m; sourceTree = "<group>"; };
+		78930E0C2004D9CD000C5A4F /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		78930E0D2004D9CD000C5A4F /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		78AA102D1FEE38380039372A /* RunPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AA10301FEE38380039372A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78AA10311FEE38380039372A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		78AA10331FEE38380039372A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		78AA10341FEE38380039372A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		78AA10371FEE38380039372A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78AA10391FEE38380039372A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78AA103C1FEE38380039372A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +68,8 @@
 		78AA10841FEE9CF20039372A /* MInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MInfoTableViewCell.h; sourceTree = "<group>"; };
 		78AA10851FEE9CF20039372A /* MInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MInfoTableViewCell.m; sourceTree = "<group>"; };
 		78AA10861FEE9CF20039372A /* MInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MInfoTableViewCell.xib; sourceTree = "<group>"; };
+		7DAFF9F3A481F2C6434B748A /* libPods-RunPlan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunPlan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F13D65247671082CE02989 /* Pods-RunPlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunPlan.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunPlan/Pods-RunPlan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,17 +77,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C79B927191C1F2E9F9E7B2F /* libPods-RunPlan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78930E082004C13F000C5A4F /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				78930E092004C160000C5A4F /* MyProgressView.h */,
+				78930E0A2004C160000C5A4F /* MyProgressView.m */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
 		78AA10241FEE38380039372A = {
 			isa = PBXGroup;
 			children = (
 				78AA102F1FEE38380039372A /* RunPlan */,
 				78AA102E1FEE38380039372A /* Products */,
+				E0E2242E3D39EA5C68CBF23E /* Pods */,
+				953239F2482DDF9E1CEBB70C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +117,10 @@
 				78AA10481FEE39300039372A /* Mine */,
 				78AA10471FEE39270039372A /* Mark */,
 				78AA10461FEE391E0039372A /* Main */,
+				78930E0C2004D9CD000C5A4F /* TabBarViewController.h */,
+				78930E0D2004D9CD000C5A4F /* TabBarViewController.m */,
 				78AA10301FEE38380039372A /* AppDelegate.h */,
 				78AA10311FEE38380039372A /* AppDelegate.m */,
-				78AA10331FEE38380039372A /* ViewController.h */,
-				78AA10341FEE38380039372A /* ViewController.m */,
 				78AA10361FEE38380039372A /* Main.storyboard */,
 				78AA10391FEE38380039372A /* Assets.xcassets */,
 				78AA103B1FEE38380039372A /* LaunchScreen.storyboard */,
@@ -114,6 +133,7 @@
 		78AA10461FEE391E0039372A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				78930E082004C13F000C5A4F /* VIew */,
 				78AA104F1FEE3B020039372A /* MainTableViewController.h */,
 				78AA10501FEE3B020039372A /* MainTableViewController.m */,
 				78AA10551FEE3E6F0039372A /* MainTableViewCell.h */,
@@ -163,6 +183,23 @@
 			path = MineInfos;
 			sourceTree = "<group>";
 		};
+		953239F2482DDF9E1CEBB70C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DAFF9F3A481F2C6434B748A /* libPods-RunPlan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E2242E3D39EA5C68CBF23E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D7BC24AFBC10EC58E3FA8CC /* Pods-RunPlan.debug.xcconfig */,
+				D6F13D65247671082CE02989 /* Pods-RunPlan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78AA10431FEE38380039372A /* Build configuration list for PBXNativeTarget "RunPlan" */;
 			buildPhases = (
+				9B2DB28CA14E1B03AD301E78 /* [CP] Check Pods Manifest.lock */,
 				78AA10291FEE38380039372A /* Sources */,
 				78AA102A1FEE38380039372A /* Frameworks */,
 				78AA102B1FEE38380039372A /* Resources */,
+				C8B8A2E988E8913D3618B77B /* [CP] Embed Pods Frameworks */,
+				4F35482F0F90F4C0A1704AB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,20 +274,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F35482F0F90F4C0A1704AB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunPlan/Pods-RunPlan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B2DB28CA14E1B03AD301E78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8B8A2E988E8913D3618B77B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunPlan/Pods-RunPlan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78AA10291FEE38380039372A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				78AA104B1FEE3AE20039372A /* MineTableViewController.m in Sources */,
-				78AA10351FEE38380039372A /* ViewController.m in Sources */,
 				78AA107E1FEE7C010039372A /* MineTableViewCell.m in Sources */,
+				78930E0E2004D9CD000C5A4F /* TabBarViewController.m in Sources */,
 				78AA10871FEE9CF20039372A /* MInfoTableViewCell.m in Sources */,
 				78AA10581FEE3E6F0039372A /* MainTableViewCell.m in Sources */,
 				78AA10511FEE3B020039372A /* MainTableViewController.m in Sources */,
 				78AA10761FEE77500039372A /* ChallengeTableViewCell.m in Sources */,
 				78AA104E1FEE3AF70039372A /* ChallengeTableViewController.m in Sources */,
 				78AA10401FEE38380039372A /* main.m in Sources */,
+				78930E0B2004C160000C5A4F /* MyProgressView.m in Sources */,
 				78AA10831FEE9CD00039372A /* MineInfoTableViewController.m in Sources */,
 				78AA10321FEE38380039372A /* AppDelegate.m in Sources */,
 				78AA105D1FEE3FA70039372A /* MainTableViewCellSpeci.m in Sources */,
@@ -382,6 +471,7 @@
 		};
 		78AA10441FEE38380039372A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7BC24AFBC10EC58E3FA8CC /* Pods-RunPlan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,6 +487,7 @@
 		};
 		78AA10451FEE38380039372A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F13D65247671082CE02989 /* Pods-RunPlan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
