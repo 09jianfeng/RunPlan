@@ -7,6 +7,7 @@
 //
 
 #import "MineTableViewController.h"
+#import "MineTableViewCell.h"
 
 @interface MineTableViewController ()
 
@@ -22,6 +23,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"MineTableViewCell" bundle:nil] forCellReuseIdentifier:@"MineTableViewCell"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +35,63 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 4;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MineTableViewCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    UIImageView *iconView = [cell viewWithTag:101];
+    UILabel *label1 = [cell viewWithTag:102];
+    UILabel *label2 = [cell viewWithTag:103];
+    UILabel *label3 = [cell viewWithTag:104];
+    
+    switch (indexPath.row) {
+        case 0:
+            {
+                
+            }
+            break;
+        case 1:
+        {
+            iconView.image = [UIImage imageNamed:@"jiangli_icon"];
+            label1.text = @"累计奖励";
+            label2.text = @"105.00";
+            label3.text = @"元";
+        }
+            break;
+        case 2:
+        {
+            iconView.image = [UIImage imageNamed:@"dianzan_icon"];
+            label1.text = @"累计赞数";
+            label2.text = @"8976";
+            label3.text = @"赞";
+        }
+            break;
+        case 3:
+        {
+            iconView.image = [UIImage imageNamed:@"tiaozhan_icon"];
+            label1.text = @"挑战记录";
+            label2.text = @"1";
+            label3.text = @"成功";
+        }
+            break;
+            
+        default:
+            break;
+    }
     
     return cell;
 }
-*/
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 80;
+}
 
 /*
 // Override to support conditional editing of the table view.
