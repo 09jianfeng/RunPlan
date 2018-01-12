@@ -1,14 +1,14 @@
 //
-//  MInfoTableViewCell.m
+//  MineInfoTableViewCell.m
 //  RunPlan
 //
-//  Created by JFChen on 2017/12/23.
-//  Copyright © 2017年 JFChen. All rights reserved.
+//  Created by JFChen on 2018/1/12.
+//  Copyright © 2018年 JFChen. All rights reserved.
 //
 
-#import "MInfoTableViewCell.h"
+#import "MineInfoTableViewCell.h"
 
-@implementation MInfoTableViewCell
+@implementation MineInfoTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

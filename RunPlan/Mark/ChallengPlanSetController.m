@@ -1,26 +1,22 @@
 //
-//  TabBarViewController.m
+//  ChallengPlanSetController.m
 //  RunPlan
 //
-//  Created by JFChen on 2018/1/9.
+//  Created by JFChen on 2018/1/12.
 //  Copyright © 2018年 JFChen. All rights reserved.
 //
 
-#import "TabBarViewController.h"
+#import "ChallengPlanSetController.h"
 
-@interface TabBarViewController ()
+@interface ChallengPlanSetController ()
 
 @end
 
-@implementation TabBarViewController
+@implementation ChallengPlanSetController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
-    backItem.title = @"返回";
-    self.navigationItem.backBarButtonItem = backItem;
 }
 
 - (void)didReceiveMemoryWarning {

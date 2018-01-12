@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C79B927191C1F2E9F9E7B2F /* libPods-RunPlan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAFF9F3A481F2C6434B748A /* libPods-RunPlan.a */; };
+		789269A52008AC1400B3654E /* ChallengPlanSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 789269A42008AC1400B3654E /* ChallengPlanSetController.m */; };
 		78930E0B2004C160000C5A4F /* MyProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E0A2004C160000C5A4F /* MyProgressView.m */; };
 		78930E0E2004D9CD000C5A4F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E0D2004D9CD000C5A4F /* TabBarViewController.m */; };
 		78930E122004E206000C5A4F /* MainUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E112004E206000C5A4F /* MainUserInfo.m */; };
@@ -27,14 +28,16 @@
 		78AA10771FEE77500039372A /* ChallengeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78AA10751FEE77500039372A /* ChallengeTableViewCell.xib */; };
 		78AA107E1FEE7C010039372A /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA107C1FEE7C010039372A /* MineTableViewCell.m */; };
 		78AA107F1FEE7C010039372A /* MineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78AA107D1FEE7C010039372A /* MineTableViewCell.xib */; };
-		78AA10831FEE9CD00039372A /* MineInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA10821FEE9CD00039372A /* MineInfoTableViewController.m */; };
-		78AA10871FEE9CF20039372A /* MInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA10851FEE9CF20039372A /* MInfoTableViewCell.m */; };
-		78AA10881FEE9CF20039372A /* MInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78AA10861FEE9CF20039372A /* MInfoTableViewCell.xib */; };
 		78F9030520089D2E00B0E873 /* ImagWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F9030420089D2E00B0E873 /* ImagWebViewController.m */; };
+		78F903092008A44800B0E873 /* MineInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F903082008A44800B0E873 /* MineInfoTableViewController.m */; };
+		78F903102008A48800B0E873 /* MineInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F9030E2008A48800B0E873 /* MineInfoTableViewCell.m */; };
+		78F903112008A48800B0E873 /* MineInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F9030F2008A48800B0E873 /* MineInfoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D7BC24AFBC10EC58E3FA8CC /* Pods-RunPlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunPlan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunPlan/Pods-RunPlan.debug.xcconfig"; sourceTree = "<group>"; };
+		789269A32008AC1400B3654E /* ChallengPlanSetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChallengPlanSetController.h; sourceTree = "<group>"; };
+		789269A42008AC1400B3654E /* ChallengPlanSetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChallengPlanSetController.m; sourceTree = "<group>"; };
 		78930E092004C160000C5A4F /* MyProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProgressView.h; sourceTree = "<group>"; };
 		78930E0A2004C160000C5A4F /* MyProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProgressView.m; sourceTree = "<group>"; };
 		78930E0C2004D9CD000C5A4F /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
@@ -67,13 +70,13 @@
 		78AA107B1FEE7C010039372A /* MineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
 		78AA107C1FEE7C010039372A /* MineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
 		78AA107D1FEE7C010039372A /* MineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineTableViewCell.xib; sourceTree = "<group>"; };
-		78AA10811FEE9CD00039372A /* MineInfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineInfoTableViewController.h; sourceTree = "<group>"; };
-		78AA10821FEE9CD00039372A /* MineInfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineInfoTableViewController.m; sourceTree = "<group>"; };
-		78AA10841FEE9CF20039372A /* MInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MInfoTableViewCell.h; sourceTree = "<group>"; };
-		78AA10851FEE9CF20039372A /* MInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MInfoTableViewCell.m; sourceTree = "<group>"; };
-		78AA10861FEE9CF20039372A /* MInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MInfoTableViewCell.xib; sourceTree = "<group>"; };
 		78F9030320089D2E00B0E873 /* ImagWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagWebViewController.h; sourceTree = "<group>"; };
 		78F9030420089D2E00B0E873 /* ImagWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagWebViewController.m; sourceTree = "<group>"; };
+		78F903072008A44800B0E873 /* MineInfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineInfoTableViewController.h; sourceTree = "<group>"; };
+		78F903082008A44800B0E873 /* MineInfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineInfoTableViewController.m; sourceTree = "<group>"; };
+		78F9030D2008A48800B0E873 /* MineInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineInfoTableViewCell.h; sourceTree = "<group>"; };
+		78F9030E2008A48800B0E873 /* MineInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineInfoTableViewCell.m; sourceTree = "<group>"; };
+		78F9030F2008A48800B0E873 /* MineInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineInfoTableViewCell.xib; sourceTree = "<group>"; };
 		7DAFF9F3A481F2C6434B748A /* libPods-RunPlan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunPlan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F13D65247671082CE02989 /* Pods-RunPlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunPlan.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunPlan/Pods-RunPlan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +182,8 @@
 				78AA10731FEE77500039372A /* ChallengeTableViewCell.h */,
 				78AA10741FEE77500039372A /* ChallengeTableViewCell.m */,
 				78AA10751FEE77500039372A /* ChallengeTableViewCell.xib */,
+				789269A32008AC1400B3654E /* ChallengPlanSetController.h */,
+				789269A42008AC1400B3654E /* ChallengPlanSetController.m */,
 			);
 			path = Mark;
 			sourceTree = "<group>";
@@ -186,27 +191,27 @@
 		78AA10481FEE39300039372A /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				78F903062008A41700B0E873 /* View */,
 				78930E132004F287000C5A4F /* Model */,
-				78AA10801FEE9C9A0039372A /* MineInfos */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		78F903062008A41700B0E873 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				78AA10491FEE3AE20039372A /* MineTableViewController.h */,
 				78AA104A1FEE3AE20039372A /* MineTableViewController.m */,
 				78AA107B1FEE7C010039372A /* MineTableViewCell.h */,
 				78AA107C1FEE7C010039372A /* MineTableViewCell.m */,
 				78AA107D1FEE7C010039372A /* MineTableViewCell.xib */,
+				78F903072008A44800B0E873 /* MineInfoTableViewController.h */,
+				78F903082008A44800B0E873 /* MineInfoTableViewController.m */,
+				78F9030D2008A48800B0E873 /* MineInfoTableViewCell.h */,
+				78F9030E2008A48800B0E873 /* MineInfoTableViewCell.m */,
+				78F9030F2008A48800B0E873 /* MineInfoTableViewCell.xib */,
 			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		78AA10801FEE9C9A0039372A /* MineInfos */ = {
-			isa = PBXGroup;
-			children = (
-				78AA10811FEE9CD00039372A /* MineInfoTableViewController.h */,
-				78AA10821FEE9CD00039372A /* MineInfoTableViewController.m */,
-				78AA10841FEE9CF20039372A /* MInfoTableViewCell.h */,
-				78AA10851FEE9CF20039372A /* MInfoTableViewCell.m */,
-				78AA10861FEE9CF20039372A /* MInfoTableViewCell.xib */,
-			);
-			path = MineInfos;
+			path = View;
 			sourceTree = "<group>";
 		};
 		953239F2482DDF9E1CEBB70C /* Frameworks */ = {
@@ -290,9 +295,9 @@
 				78AA103D1FEE38380039372A /* LaunchScreen.storyboard in Resources */,
 				78AA105E1FEE3FA70039372A /* MainTableViewCellSpeci.xib in Resources */,
 				78AA107F1FEE7C010039372A /* MineTableViewCell.xib in Resources */,
-				78AA10881FEE9CF20039372A /* MInfoTableViewCell.xib in Resources */,
 				78AA103A1FEE38380039372A /* Assets.xcassets in Resources */,
 				78AA10591FEE3E6F0039372A /* MainTableViewCell.xib in Resources */,
+				78F903112008A48800B0E873 /* MineInfoTableViewCell.xib in Resources */,
 				78AA10381FEE38380039372A /* Main.storyboard in Resources */,
 				78AA10771FEE77500039372A /* ChallengeTableViewCell.xib in Resources */,
 			);
@@ -356,7 +361,7 @@
 				78AA104B1FEE3AE20039372A /* MineTableViewController.m in Sources */,
 				78AA107E1FEE7C010039372A /* MineTableViewCell.m in Sources */,
 				78930E0E2004D9CD000C5A4F /* TabBarViewController.m in Sources */,
-				78AA10871FEE9CF20039372A /* MInfoTableViewCell.m in Sources */,
+				78F903092008A44800B0E873 /* MineInfoTableViewController.m in Sources */,
 				78AA10581FEE3E6F0039372A /* MainTableViewCell.m in Sources */,
 				78F9030520089D2E00B0E873 /* ImagWebViewController.m in Sources */,
 				78AA10511FEE3B020039372A /* MainTableViewController.m in Sources */,
@@ -364,10 +369,11 @@
 				78AA104E1FEE3AF70039372A /* ChallengeTableViewController.m in Sources */,
 				78AA10401FEE38380039372A /* main.m in Sources */,
 				78930E0B2004C160000C5A4F /* MyProgressView.m in Sources */,
-				78AA10831FEE9CD00039372A /* MineInfoTableViewController.m in Sources */,
+				78F903102008A48800B0E873 /* MineInfoTableViewCell.m in Sources */,
 				78930E122004E206000C5A4F /* MainUserInfo.m in Sources */,
 				78AA10321FEE38380039372A /* AppDelegate.m in Sources */,
 				78AA105D1FEE3FA70039372A /* MainTableViewCellSpeci.m in Sources */,
+				789269A52008AC1400B3654E /* ChallengPlanSetController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
