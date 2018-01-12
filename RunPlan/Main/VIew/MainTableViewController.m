@@ -10,6 +10,7 @@
 #import "MyProgressView.h"
 #import "MainTableViewCell.h"
 #import "MainTableViewCellSpeci.h"
+#import "ImagWebViewController.h"
 
 @interface MainTableViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btnJoinChallenge;
@@ -47,7 +48,17 @@
 }
 
 - (IBAction)btnRulePressed:(id)sender {
-    
+    UIImage *image = [UIImage imageNamed:@"active_rule"];
+    ImagWebViewController *wevViewCon = [ImagWebViewController new];
+    wevViewCon.image = image;
+    [self.navigationController pushViewController:wevViewCon animated:YES];
+}
+
+- (void)decompressImage:(UIImage *)image
+{
+    UIGraphicsBeginImageContext(CGSizeMake(1, 1));
+    [image drawAtPoint:CGPointZero];
+    UIGraphicsEndImageContext();
 }
 
 #pragma mark - Table view data source

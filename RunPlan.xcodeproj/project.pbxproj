@@ -30,6 +30,7 @@
 		78AA10831FEE9CD00039372A /* MineInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA10821FEE9CD00039372A /* MineInfoTableViewController.m */; };
 		78AA10871FEE9CF20039372A /* MInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA10851FEE9CF20039372A /* MInfoTableViewCell.m */; };
 		78AA10881FEE9CF20039372A /* MInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78AA10861FEE9CF20039372A /* MInfoTableViewCell.xib */; };
+		78F9030520089D2E00B0E873 /* ImagWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F9030420089D2E00B0E873 /* ImagWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		78AA10841FEE9CF20039372A /* MInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MInfoTableViewCell.h; sourceTree = "<group>"; };
 		78AA10851FEE9CF20039372A /* MInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MInfoTableViewCell.m; sourceTree = "<group>"; };
 		78AA10861FEE9CF20039372A /* MInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MInfoTableViewCell.xib; sourceTree = "<group>"; };
+		78F9030320089D2E00B0E873 /* ImagWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagWebViewController.h; sourceTree = "<group>"; };
+		78F9030420089D2E00B0E873 /* ImagWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagWebViewController.m; sourceTree = "<group>"; };
 		7DAFF9F3A481F2C6434B748A /* libPods-RunPlan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunPlan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F13D65247671082CE02989 /* Pods-RunPlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunPlan.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunPlan/Pods-RunPlan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,8 +93,18 @@
 		78930E082004C13F000C5A4F /* VIew */ = {
 			isa = PBXGroup;
 			children = (
+				78AA104F1FEE3B020039372A /* MainTableViewController.h */,
+				78AA10501FEE3B020039372A /* MainTableViewController.m */,
+				78AA10551FEE3E6F0039372A /* MainTableViewCell.h */,
+				78AA10561FEE3E6F0039372A /* MainTableViewCell.m */,
+				78AA10571FEE3E6F0039372A /* MainTableViewCell.xib */,
+				78AA105A1FEE3FA70039372A /* MainTableViewCellSpeci.h */,
+				78AA105B1FEE3FA70039372A /* MainTableViewCellSpeci.m */,
+				78AA105C1FEE3FA70039372A /* MainTableViewCellSpeci.xib */,
 				78930E092004C160000C5A4F /* MyProgressView.h */,
 				78930E0A2004C160000C5A4F /* MyProgressView.m */,
+				78F9030320089D2E00B0E873 /* ImagWebViewController.h */,
+				78F9030420089D2E00B0E873 /* ImagWebViewController.m */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -105,10 +118,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		78930E132004F287000C5A4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		78AA10241FEE38380039372A = {
 			isa = PBXGroup;
 			children = (
 				78AA102F1FEE38380039372A /* RunPlan */,
+				78AA10391FEE38380039372A /* Assets.xcassets */,
 				78AA102E1FEE38380039372A /* Products */,
 				E0E2242E3D39EA5C68CBF23E /* Pods */,
 				953239F2482DDF9E1CEBB70C /* Frameworks */,
@@ -134,7 +155,6 @@
 				78AA10301FEE38380039372A /* AppDelegate.h */,
 				78AA10311FEE38380039372A /* AppDelegate.m */,
 				78AA10361FEE38380039372A /* Main.storyboard */,
-				78AA10391FEE38380039372A /* Assets.xcassets */,
 				78AA103B1FEE38380039372A /* LaunchScreen.storyboard */,
 				78AA103E1FEE38380039372A /* Info.plist */,
 				78AA103F1FEE38380039372A /* main.m */,
@@ -147,14 +167,6 @@
 			children = (
 				78930E0F2004E1DB000C5A4F /* Model */,
 				78930E082004C13F000C5A4F /* VIew */,
-				78AA104F1FEE3B020039372A /* MainTableViewController.h */,
-				78AA10501FEE3B020039372A /* MainTableViewController.m */,
-				78AA10551FEE3E6F0039372A /* MainTableViewCell.h */,
-				78AA10561FEE3E6F0039372A /* MainTableViewCell.m */,
-				78AA10571FEE3E6F0039372A /* MainTableViewCell.xib */,
-				78AA105A1FEE3FA70039372A /* MainTableViewCellSpeci.h */,
-				78AA105B1FEE3FA70039372A /* MainTableViewCellSpeci.m */,
-				78AA105C1FEE3FA70039372A /* MainTableViewCellSpeci.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -174,6 +186,7 @@
 		78AA10481FEE39300039372A /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				78930E132004F287000C5A4F /* Model */,
 				78AA10801FEE9C9A0039372A /* MineInfos */,
 				78AA10491FEE3AE20039372A /* MineTableViewController.h */,
 				78AA104A1FEE3AE20039372A /* MineTableViewController.m */,
@@ -345,6 +358,7 @@
 				78930E0E2004D9CD000C5A4F /* TabBarViewController.m in Sources */,
 				78AA10871FEE9CF20039372A /* MInfoTableViewCell.m in Sources */,
 				78AA10581FEE3E6F0039372A /* MainTableViewCell.m in Sources */,
+				78F9030520089D2E00B0E873 /* ImagWebViewController.m in Sources */,
 				78AA10511FEE3B020039372A /* MainTableViewController.m in Sources */,
 				78AA10761FEE77500039372A /* ChallengeTableViewCell.m in Sources */,
 				78AA104E1FEE3AF70039372A /* ChallengeTableViewController.m in Sources */,
