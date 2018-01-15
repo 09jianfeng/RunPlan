@@ -8,7 +8,9 @@
 
 #import "ChallengPlanSetController.h"
 
-@interface ChallengPlanSetController ()
+@interface ChallengPlanSetController ()<UIPickerViewDelegate>
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (weak, nonatomic) IBOutlet UILabel *labelZhanli;
 
 @end
 
@@ -24,14 +26,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - touch event
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)btnConfigToChallenge:(id)sender {
+    
 }
-*/
 
+- (IBAction)btnAgreePressed:(id)sender {
+    
+}
+
+- (IBAction)btnZhanliInfoPressed:(id)sender {
+    
+}
+
+- (IBAction)btnRuleInfoPressed:(id)sender {
+    
+}
 @end

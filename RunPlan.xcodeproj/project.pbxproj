@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4C79B927191C1F2E9F9E7B2F /* libPods-RunPlan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAFF9F3A481F2C6434B748A /* libPods-RunPlan.a */; };
 		789269A52008AC1400B3654E /* ChallengPlanSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 789269A42008AC1400B3654E /* ChallengPlanSetController.m */; };
+		789269A8200CCDDC00B3654E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789269A6200CCDD300B3654E /* HealthKit.framework */; };
+		789269A9200CCDDC00B3654E /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789269A7200CCDD300B3654E /* HealthKitUI.framework */; };
+		789269B2200CD32A00B3654E /* MagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 789269AD200CD32A00B3654E /* MagnifierView.m */; };
+		789269B3200CD32A00B3654E /* MyPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 789269AF200CD32A00B3654E /* MyPickerView.m */; };
+		789269B4200CD32A00B3654E /* WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 789269B1200CD32A00B3654E /* WheelView.m */; };
 		78930E0B2004C160000C5A4F /* MyProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E0A2004C160000C5A4F /* MyProgressView.m */; };
 		78930E0E2004D9CD000C5A4F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E0D2004D9CD000C5A4F /* TabBarViewController.m */; };
 		78930E122004E206000C5A4F /* MainUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78930E112004E206000C5A4F /* MainUserInfo.m */; };
@@ -38,6 +43,14 @@
 		0D7BC24AFBC10EC58E3FA8CC /* Pods-RunPlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunPlan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunPlan/Pods-RunPlan.debug.xcconfig"; sourceTree = "<group>"; };
 		789269A32008AC1400B3654E /* ChallengPlanSetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChallengPlanSetController.h; sourceTree = "<group>"; };
 		789269A42008AC1400B3654E /* ChallengPlanSetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChallengPlanSetController.m; sourceTree = "<group>"; };
+		789269A6200CCDD300B3654E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		789269A7200CCDD300B3654E /* HealthKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKitUI.framework; path = System/Library/Frameworks/HealthKitUI.framework; sourceTree = SDKROOT; };
+		789269AC200CD32A00B3654E /* MagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnifierView.h; sourceTree = "<group>"; };
+		789269AD200CD32A00B3654E /* MagnifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnifierView.m; sourceTree = "<group>"; };
+		789269AE200CD32A00B3654E /* MyPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPickerView.h; sourceTree = "<group>"; };
+		789269AF200CD32A00B3654E /* MyPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPickerView.m; sourceTree = "<group>"; };
+		789269B0200CD32A00B3654E /* WheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelView.h; sourceTree = "<group>"; };
+		789269B1200CD32A00B3654E /* WheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelView.m; sourceTree = "<group>"; };
 		78930E092004C160000C5A4F /* MyProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProgressView.h; sourceTree = "<group>"; };
 		78930E0A2004C160000C5A4F /* MyProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProgressView.m; sourceTree = "<group>"; };
 		78930E0C2004D9CD000C5A4F /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
@@ -86,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789269A8200CCDDC00B3654E /* HealthKit.framework in Frameworks */,
+				789269A9200CCDDC00B3654E /* HealthKitUI.framework in Frameworks */,
 				4C79B927191C1F2E9F9E7B2F /* libPods-RunPlan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +108,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		789269AA200CD2C000B3654E /* SetChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				789269AB200CD32A00B3654E /* PickerView */,
+				789269A32008AC1400B3654E /* ChallengPlanSetController.h */,
+				789269A42008AC1400B3654E /* ChallengPlanSetController.m */,
+			);
+			path = SetChallenge;
+			sourceTree = "<group>";
+		};
+		789269AB200CD32A00B3654E /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				789269AC200CD32A00B3654E /* MagnifierView.h */,
+				789269AD200CD32A00B3654E /* MagnifierView.m */,
+				789269AE200CD32A00B3654E /* MyPickerView.h */,
+				789269AF200CD32A00B3654E /* MyPickerView.m */,
+				789269B0200CD32A00B3654E /* WheelView.h */,
+				789269B1200CD32A00B3654E /* WheelView.m */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
 		78930E082004C13F000C5A4F /* VIew */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,13 +215,12 @@
 		78AA10471FEE39270039372A /* Mark */ = {
 			isa = PBXGroup;
 			children = (
+				789269AA200CD2C000B3654E /* SetChallenge */,
 				78AA104C1FEE3AF70039372A /* ChallengeTableViewController.h */,
 				78AA104D1FEE3AF70039372A /* ChallengeTableViewController.m */,
 				78AA10731FEE77500039372A /* ChallengeTableViewCell.h */,
 				78AA10741FEE77500039372A /* ChallengeTableViewCell.m */,
 				78AA10751FEE77500039372A /* ChallengeTableViewCell.xib */,
-				789269A32008AC1400B3654E /* ChallengPlanSetController.h */,
-				789269A42008AC1400B3654E /* ChallengPlanSetController.m */,
 			);
 			path = Mark;
 			sourceTree = "<group>";
@@ -217,6 +254,8 @@
 		953239F2482DDF9E1CEBB70C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				789269A6200CCDD300B3654E /* HealthKit.framework */,
+				789269A7200CCDD300B3654E /* HealthKitUI.framework */,
 				7DAFF9F3A481F2C6434B748A /* libPods-RunPlan.a */,
 			);
 			name = Frameworks;
@@ -361,13 +400,16 @@
 				78AA104B1FEE3AE20039372A /* MineTableViewController.m in Sources */,
 				78AA107E1FEE7C010039372A /* MineTableViewCell.m in Sources */,
 				78930E0E2004D9CD000C5A4F /* TabBarViewController.m in Sources */,
+				789269B2200CD32A00B3654E /* MagnifierView.m in Sources */,
 				78F903092008A44800B0E873 /* MineInfoTableViewController.m in Sources */,
 				78AA10581FEE3E6F0039372A /* MainTableViewCell.m in Sources */,
+				789269B3200CD32A00B3654E /* MyPickerView.m in Sources */,
 				78F9030520089D2E00B0E873 /* ImagWebViewController.m in Sources */,
 				78AA10511FEE3B020039372A /* MainTableViewController.m in Sources */,
 				78AA10761FEE77500039372A /* ChallengeTableViewCell.m in Sources */,
 				78AA104E1FEE3AF70039372A /* ChallengeTableViewController.m in Sources */,
 				78AA10401FEE38380039372A /* main.m in Sources */,
+				789269B4200CD32A00B3654E /* WheelView.m in Sources */,
 				78930E0B2004C160000C5A4F /* MyProgressView.m in Sources */,
 				78F903102008A48800B0E873 /* MineInfoTableViewCell.m in Sources */,
 				78930E122004E206000C5A4F /* MainUserInfo.m in Sources */,
